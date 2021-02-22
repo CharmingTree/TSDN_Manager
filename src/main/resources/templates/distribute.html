@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/distribute.css}">
+</head>
+<body>
+    <form id="bundle_form"> 
+        <div class="controller_bundle">
+            <input name="isController" type="checkbox">
+            <label>Controller Bundle : </label>
+            <input name="controller_path" type="text" readonly>
+            <input name="selectFileForController" type="file" accept=".jar, .war">
+        </div>
+        <div class="dmi_bundle">
+            <input name="isDmi" type="checkbox">
+            <label>DMI NBI Bundle : </label>
+            <input name="dmi_path" type="text" readonly>
+            <input name="selectFileForDmi" type="file">
+        </div>
+        <div class="pce_bundle">
+            <input name="isPce" type="checkbox">
+            <label>PCE Bundle : </label>
+            <input name="pce_path" type="text" readonly>
+            <input name="selectFileForPce" type="file">
+        </div>
+        <div class="ui">
+            <input name="isUi" type="checkbox">
+            <label>UI War : </label>
+            <input name="ui_path" type="text" readonly>
+            <input name="selectFileForUi" type="file">
+        </div>
+        <div class="distribute">
+            <button id="distribute_btn">Distribute</button>
+        </div>
+    </form>
+    
+</body>
+</html>
+
+

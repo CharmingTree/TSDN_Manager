@@ -1,0 +1,39 @@
+form #bundle_form {
+    display: table;
+    margin : 0 auto;
+}
+
+form div {
+    display: table-row;
+}
+
+form label, form input[name$="path"], input[name^="select"] {
+    display: table-cell;
+    margin-bottom: 4px;
+}
+
+form label {
+    width: 200px;
+    padding-right: 5px;
+    text-align: right;
+    float: left;
+}
+
+form input[name$="path"] {
+    width: 350px;
+    text-align: right;
+    margin-right: 5px;
+    float: left;
+}
+
+form input[name^="select"] {
+    margin-left: 3px;
+    margin-right: 3px;
+    cursor: pointer;
+    float: left;
+}
+
+form input[name^="is"] {
+    margin-left: 5px;
+    float: left;
+}
